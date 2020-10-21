@@ -17,7 +17,7 @@
     <link rel="icon" href="../raw/bookicon_from_iconfont.cn.svg" />
     <title> - 信息技术快速复习指南</title>
   </head>
-  <body class="mdui-theme-primary-indigo">
+  <body class="mdui-theme-primary-indigo" onload="default_onload();">
     <!--Customize-->
     <style type="text/css">
       .customized_area {
@@ -66,6 +66,7 @@
               c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
           </svg>
         </a>
+        <a href='https://gitee.com/lifesaver/lifesaver'><img src='https://gitee.com/lifesaver/lifesaver/widgets/widget_5.svg' alt='Fork me on Gitee' mdui-tooltip="{position: 'left', content: '在码云查看'}"></img></a>
     </div>
     <div class="mdui-drawer mdui-drawer-close" id="nav">
         <div class="mdui-list" mdui-collapse="{accordion: true}">
@@ -124,6 +125,20 @@
       </div>  
     </div>
     <!-- MDUI JavaScript -->
+    <script>
+      function default_onload() {
+        if (location.href.indexOf('lifesaver.gitee.io') == -1) {
+          mdui.snackbar({
+            position: 'top',
+            message: '请牢记国内域名： https://lifesaver.gitee.io',
+            buttonText: '立即前往！',
+            onButtonClick: function(){
+              location.href="https://lifesaver.gitee.io";
+            },
+          });
+        }
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"
       integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
