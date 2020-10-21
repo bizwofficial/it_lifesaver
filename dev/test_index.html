@@ -10,14 +10,12 @@
     <!-- MDUI CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"
-      integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"
-      crossorigin="anonymous"
+      href="../dev/mdui-v1.0.0/css/mdui.css"
     />
     <link rel="icon" href="./bookicon_from_iconfont.cn.svg" />
     <title>仪表盘 - 信息技术快速复习指南</title>
   </head>
-  <body class="mdui-theme-primary-indigo" onload="setTimeout('progressing();', 500);">
+  <body class="mdui-theme-primary-indigo">
     <!--Customize-->
     <style type="text/css">
       .customized_area {
@@ -62,48 +60,29 @@
     <!--Body-->
     <div class="mdui-typo customized_area">
       <h1 class="mdui-hoverable customized_center customized_tight" style="font-weight: bolder;">信息技术快速复习指南</h1>
-      <div>
-        <h2 class="mdui-hoverable customized_tight">开发进度</h2>
-        <div class="mdui-chip mdui-color-theme-100 mdui-ripple mdui-ripple-white">
-          <span class="mdui-chip-icon mdui-color-theme" style="font-size: small;">15%</span>
-          <span class="mdui-chip-title">当前子任务进度：已完成开发进度条及底栏。</span>
-        </div>
-        <div class="mdui-chip mdui-color-theme-100 mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '前往项目主页', position: 'right'}" onclick="location.href='https://github.com/bizwofficial/it_lifesaver';">
-          <span class="mdui-chip-icon mdui-color-theme" style="font-size: small;">3%</span>
-          <span class="mdui-chip-title">总进度：正在构建仪表盘页……</span>
-        </div>
-        <script>progress=3;</script>
-        <div class="mdui-progress mdui-hoverable">
-          <div class="mdui-progress-determinate" id="progressing_line" style="width: 0%;" mdui-tooltip="{content: '总进度', position: 'top'}"></div>
-        </div>
-      </div>
-      <div>
-        <h2 class="mdui-hoverable customized_tight">关于</h2>
+      <h2 class="mdui-hoverable customized_tight">关于</h2>
+      <p class="mdui-hoverable">
+        《信息技术快速复习指南》是一篇由bzw和另一位巨佬编写的辅助同学们复习信息技术学考的实用指南。
+        自2020年诞生以来，销量超过100份，远销外校，声名远扬，经久不衰。
+        而这是原稿的修订版本，现在免费通过本网站发放。
+      </p>
+      <p class="mdui-hoverable">
+        由于经过了2020年信息技术学考的洗礼，修订版更正了原稿的一些typo和事实错误，
+        并增加了很多易错点提示和重要知识点的着重标记。我们强烈推荐你阅读本修订版。
+      </p>
+      <p class="mdui-hoverable">
+        本文档的PDF（可打印版本）共30多页，预计阅读时间1小时。
+      </p>
+      <h2 class="mdui-hoverable customized_tight">常见问题</h2>
+      <div class="mdui-hoverable">
         <p class="mdui-hoverable">
-          《信息技术快速复习指南》是一篇由Bridgman和另一位巨佬编写的辅助同学们复习信息技术学考的实用指南。
-          自2020年诞生以来，销量超过100份，远销外校，声名远扬，经久不衰。
-          而这是原稿的修订版本，现在免费通过本网站发放。
+          <strong>Q: 如何阅读？</strong><br>
+          本网站与PDF版本同样易于阅读！只需点击页面左上角的
+          <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-black"><i class="mdui-icon material-icons">menu</i></button>
+          即可选择您感兴趣的主题开始阅读！如果想要系统地进行复习，可以在阅读完一章后点击页面下方的导航跳转到下一章，
+          以营造连续的阅读体验。
         </p>
-        <p class="mdui-hoverable">
-          由于经过了2020年信息技术学考的洗礼，修订版更正了原稿的一些typo和事实错误，
-          并增加了很多易错点提示和重要知识点的着重标记。我们强烈推荐你阅读本修订版。
-        </p>
-        <p class="mdui-hoverable">
-          本文档的PDF（可打印版本）共30多页，预计阅读时间1小时。
-        </p>  
       </div>
-      <div>
-        <h2 class="mdui-hoverable customized_tight">常见问题</h2>
-        <div class="mdui-hoverable">
-          <p class="mdui-hoverable">
-            <strong>Q: 如何阅读？</strong><br>
-            本网站与PDF版本同样易于阅读！只需点击页面左上角的
-            <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-black"><i class="mdui-icon material-icons">menu</i></button>
-            即可选择您感兴趣的主题开始阅读！如果想要系统地进行复习，可以在阅读完一章后点击页面下方的导航跳转到下一章，
-            以营造连续的阅读体验。
-          </p>
-        </div>
-      </div>  
     </div>
     <!--foot-->
     <div style="height: 72px;"></div>
@@ -137,16 +116,9 @@
         </div>
       </div>  
     </div>
-    <script>
-      function progressing() {
-        document.getElementById("progressing_line").setAttribute("style", "width: "+progress+"%;");
-      }
-    </script>
     <!-- MDUI JavaScript -->
     <script
-      src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"
-      integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
-      crossorigin="anonymous"
+      src="../dev/mdui-v1.0.0/js/mdui.js"
     ></script>
   </body>
 </html>
