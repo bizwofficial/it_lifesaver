@@ -14,10 +14,10 @@
       integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="./bookicon_from_iconfont.cn.svg" />
+    <link rel="icon" href="../raw/088-lifesaver.svg" />
     <title>仪表盘 - 信息技术快速复习指南</title>
   </head>
-  <body class="mdui-theme-primary-indigo" onload="setTimeout('progressing();', 500);">
+  <body class="mdui-theme-primary-indigo" onload="progressing();">
     <!--Customize-->
     <style type="text/css">
       .customized_area {
@@ -35,7 +35,24 @@
     </style>
     <!--Bar-->
     <div class="mdui-toolbar mdui-color-theme mdui-shadow-4">
-        <a href="#" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '目录'}" mdui-drawer="{target: '#nav'}"><i class="mdui-icon material-icons">menu</i></a>
+        <a href="#" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '目录'}" mdui-drawer="{target: '#nav'}">
+          <svg t="1603271072714" class="mdui-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6484" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M989.6192 560h-258.8288c-18.6016 85.168-85.6256 152.1888-170.7904 170.7904v258.8288a477.728 477.728 0 0 0 
+            94.832-19.232C693.9616 1003.7792 744.6496 1024 800 1024c123.5136 0 224-100.4864 224-224 0-55.3504-20.2208-106.0384-53.6096-145.168A477.4464 477.4464
+             0 0 0 989.6192 560zM800 960a158.9408 158.9408 0 0 1-74.0544-18.2368c93.2896-46.5312 169.2864-122.528 215.8176-215.8176A158.9696 
+             158.9696 0 0 1 960 800c0 88.224-71.776 160-160 160zM730.7904 464h258.8256a477.4464 477.4464 0 0 0-19.2288-94.832C1003.7792 
+             330.0384 1024 279.3504 1024 224c0-123.5136-100.4864-224-224-224-55.3504 0-106.0384 20.2208-145.168 53.6128A477.728 477.728 0 0 0 
+             560 34.3808v258.8288c85.1648 18.6016 152.1888 85.6224 170.7904 170.7904zM800 64c88.224 0 160 71.776 160 160a158.992 158.992 0 0 
+             1-18.2368 74.0576C895.232 204.768 819.2352 128.7712 725.9456 82.24A158.9024 158.9024 0 0 1 800 64zM293.2096 560H34.384a477.4464 
+             477.4464 0 0 0 19.2288 94.832C20.2208 693.9616 0 744.6496 0 800c0 123.5136 100.4864 224 224 224 55.3504 0 106.0384-20.2208 
+             145.168-53.6128a477.728 477.728 0 0 0 94.832 19.232v-258.8288c-85.1648-18.6016-152.1888-85.6224-170.7904-170.7904zM224 
+             960c-88.224 0-160-71.776-160-160a158.992 158.992 0 0 1 18.2368-74.0576c46.5312 93.2896 122.528 169.2864 215.8176 
+             215.8176A158.9024 158.9024 0 0 1 224 960zM224 0C100.4864 0 0 100.4864 0 224c0 55.3504 20.2208 106.0384 53.6096 145.168A477.6736 
+             477.6736 0 0 0 34.3808 464h258.8256c18.6048-85.168 85.6288-152.1888 170.7936-170.7904V34.3808a477.728 477.728 0 0 
+             0-94.832 19.232C330.0384 20.2208 279.3504 0 224 0zM82.2368 298.0576A158.992 158.992 0 0 1 64 224c0-88.224 71.776-160 
+             160-160a158.9408 158.9408 0 0 1 74.0544 18.2368C204.7648 128.768 128.768 204.7648 82.2368 298.0576z" p-id="6485" fill="#FFFFFF"></path>
+          </svg>
+        </a>
         <a class="mdui-typo-title" mdui-tooltip="{content: '返回主页'}" href="./index.html">信息技术快速复习指南</a>
         <div class="mdui-toolbar-spacer"></div>
         <a href="https://github.com/bizwofficial/it_lifesaver" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '项目主页', position: 'left'}">
@@ -82,8 +99,8 @@
             </span>
           </div>
         </h2>
-        <div class="mdui-chip mdui-color-theme-100 mdui-ripple mdui-ripple-white">
-          <span class="mdui-chip-icon mdui-color-theme" style="font-size: small;">39%</span>
+        <div class="mdui-chip mdui-color-pink-100 mdui-ripple mdui-ripple-white" onclick="progressing();">
+          <span class="mdui-chip-icon mdui-color-pink" style="font-size: small;">58%</span>
           <span class="mdui-chip-title">当前子任务进度：正在同步内容……</span>
         </div>
         <div class="mdui-chip mdui-color-theme-400 mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '前往项目主页', position: 'right'}" onclick="location.href='https://github.com/bizwofficial/it_lifesaver';">
@@ -91,8 +108,12 @@
           <span class="mdui-chip-title">总进度：正在构建仪表盘页……</span>
         </div>
         <script>progress=3;</script>
-        <div class="mdui-progress mdui-hoverable">
-          <div class="mdui-progress-determinate" id="progressing_line" style="width: 0%;" mdui-tooltip="{content: '总进度', position: 'top'}"></div>
+        <script>subprogress=58;</script>
+        <div class="mdui-progress mdui-hoverable" mdui-tooltip="{content: '当前子任务进度', position: 'top'}">
+          <div class="mdui-progress-determinate mdui-color-pink" id="subprogressing_line" style="width: 0%;"></div>
+        </div>
+        <div class="mdui-progress mdui-hoverable" mdui-tooltip="{content: '总进度', position: 'top'}">
+          <div class="mdui-progress-determinate mdui-color-theme" id="progressing_line" style="width: 0%;"></div>
         </div>
       </div>
       <div>
@@ -116,19 +137,55 @@
           <p class="mdui-hoverable">
             <strong>Q: 如何阅读？</strong><br>
             本网站与PDF版本同样易于阅读！只需点击页面左上角的
-            <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-black"><i class="mdui-icon material-icons">menu</i></button>
+            <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-black">
+              <svg t="1603271072714" class="mdui-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6484" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M989.6192 560h-258.8288c-18.6016 85.168-85.6256 152.1888-170.7904 170.7904v258.8288a477.728 477.728 0 0 0 
+                94.832-19.232C693.9616 1003.7792 744.6496 1024 800 1024c123.5136 0 224-100.4864 224-224 0-55.3504-20.2208-106.0384-53.6096-145.168A477.4464 477.4464
+                 0 0 0 989.6192 560zM800 960a158.9408 158.9408 0 0 1-74.0544-18.2368c93.2896-46.5312 169.2864-122.528 215.8176-215.8176A158.9696 
+                 158.9696 0 0 1 960 800c0 88.224-71.776 160-160 160zM730.7904 464h258.8256a477.4464 477.4464 0 0 0-19.2288-94.832C1003.7792 
+                 330.0384 1024 279.3504 1024 224c0-123.5136-100.4864-224-224-224-55.3504 0-106.0384 20.2208-145.168 53.6128A477.728 477.728 0 0 0 
+                 560 34.3808v258.8288c85.1648 18.6016 152.1888 85.6224 170.7904 170.7904zM800 64c88.224 0 160 71.776 160 160a158.992 158.992 0 0 
+                 1-18.2368 74.0576C895.232 204.768 819.2352 128.7712 725.9456 82.24A158.9024 158.9024 0 0 1 800 64zM293.2096 560H34.384a477.4464 
+                 477.4464 0 0 0 19.2288 94.832C20.2208 693.9616 0 744.6496 0 800c0 123.5136 100.4864 224 224 224 55.3504 0 106.0384-20.2208 
+                 145.168-53.6128a477.728 477.728 0 0 0 94.832 19.232v-258.8288c-85.1648-18.6016-152.1888-85.6224-170.7904-170.7904zM224 
+                 960c-88.224 0-160-71.776-160-160a158.992 158.992 0 0 1 18.2368-74.0576c46.5312 93.2896 122.528 169.2864 215.8176 
+                 215.8176A158.9024 158.9024 0 0 1 224 960zM224 0C100.4864 0 0 100.4864 0 224c0 55.3504 20.2208 106.0384 53.6096 145.168A477.6736 
+                 477.6736 0 0 0 34.3808 464h258.8256c18.6048-85.168 85.6288-152.1888 170.7936-170.7904V34.3808a477.728 477.728 0 0 
+                 0-94.832 19.232C330.0384 20.2208 279.3504 0 224 0zM82.2368 298.0576A158.992 158.992 0 0 1 64 224c0-88.224 71.776-160 
+                 160-160a158.9408 158.9408 0 0 1 74.0544 18.2368C204.7648 128.768 128.768 204.7648 82.2368 298.0576z" p-id="6485" fill="#000000"></path>
+              </svg>
+            </button>
             即可选择您感兴趣的主题开始阅读！如果想要系统地进行复习，可以在阅读完一章后点击页面下方的导航跳转到下一章，
             以营造连续的阅读体验。
           </p>
           <p class="mdui-hoverable">
-            <strong>Q: 为何本文档篇幅如此之长？</strong><br>
+            <b>Q: 为何本文档篇幅如此之长？</b><br>
             嗯……如果你不想囫囵吞枣，而是想要真正扎实地掌握信息技术学考所需的知识，那么付出几个小时的时间来阅读本文及动手实践是必要的。
             虽然学考要求60分即可，但你一定要按照100分来准备，否则得60分也将成为一个具有挑战性的任务。
           </p>
           <p class="mdui-hoverable">
-            <strong>Q: 我看到文中写着“不讨论Mac相关问题”。我在用Mac，怎么办？</strong><br>
-            用Mac准备信息技术学考不是长久之计，因为学考使用的计算机就是Windows系统！
+            <b>Q: 我看到文中写着“不讨论Mac相关问题”。我在用Mac，怎么办？</b><br>
+            用Mac准备信息技术学考肯定不是长久之计，因为学考使用的计算机就是Windows系统！
             强烈建议你去找一台装有Windows系统的计算机（也许就在你学校的机房里？），并熟悉一下Windows的使用习惯。
+          </p>
+          <p class="mdui-hoverable">
+            <b>Q: 文中的一些方法和我的老师讲的不一样。谁是对的？</b><br>
+            解决问题不止有一种方法！你可以尝试运行示例代码，如果答案正确就很可能是对的。
+            实在不清楚的话，问问你的老师吧：希望我们都是对的！
+          </p>
+          <p class="mdui-hoverable">
+            <b>Q: 我觉得文档中缺失了一些重要的主题或存在错误。我该如何联系作者？</b><br>
+            可以加我的微信<code>jugnme</code>或给我的常用邮箱<a href="mailto:jugnme@126.com">jugnme@126.com</a>发送邮件。
+            我不经常上微信，所以不用跟我打招呼，直接说出你的问题！我一定会尽快核实你的问题并修订文档的，甚至可能为你撰写一个新章节。
+            如果你了解Git，我可以对你说，我还会将你的名字加入到对应修订的commit中（当然，前提是你同意这样做）。
+            假如你发现了学考/学考模拟中的一些易错点，或是学考要求发生了变动，也可以告诉我，十分感谢！
+          </p>
+          <p class="mdui-hoverable">
+            <b>Q: 我希望下载一个PDF版本，以便打印出来阅读。</b><br>
+            我也希望读者能够将文档打印出来，因为这样更加护眼。但遗憾的是，因为版权问题，我不能这样做。
+            实现免费阅读已经十分困难了！不过下载本网站源码并用于个人用途是被允许的。
+            <strong>请注意，将《信息技术快速复习指南》及本站的任何部分用于商业用途都将受到法律追究。
+            如果你发现了这种行为，请给我发微信/邮件，将会得到应有的奖励！</strong>
           </p>
         </div>
       </div>  
@@ -167,7 +224,10 @@
     </div>
     <script>
       function progressing() {
-        document.getElementById("progressing_line").setAttribute("style", "width: "+progress+"%;");
+        document.getElementById("progressing_line").setAttribute("style", "width: "+0+"%;");
+        document.getElementById("subprogressing_line").setAttribute("style", "width: "+0+"%;");
+        setTimeout('document.getElementById("progressing_line").setAttribute("style", "width: "+progress+"%;");', 1000);
+        setTimeout('document.getElementById("subprogressing_line").setAttribute("style", "width: "+subprogress+"%;");', 1000);
       }
     </script>
     <!-- MDUI JavaScript -->
